@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.jpg">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*{
+    margin: 0;
+    padding: 0%;
+}
+body{
+    background-image: url(./img/shape.png);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+.wrapper{
+    background-color: #fff;
+    width: 646px;
+    height: 490px;
+    border-radius: 9px;
+    padding: 16px;
+    box-shadow: 0 10px 10px 10px rgba(0 , 0, 0, .1),
+                10px 0 10px 0px rgba(0 , 0, 0, .1) ;
+}
+img{
+    width: 15%;
+    height: 50%;
+}
+h2{
+    position: absolute;
+    left: 18%;
+    top: 14%;
+    color: #45424b;
+    font-size: 2.33rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.form{
+    padding: 23px;
+    font-size: 1.40rem;
+}
+.form input{
+    width: 25%;
+    border: 2px solid #64bcf4;
+    border-radius: 5px;
+    outline: none;
+    height: 20px;
+    padding: 5px;
+    color: black;
+}
+.email input{
+    width: 60%;
+}
+.sub input{
+    width: 40%;
+}
+.message input{
+    width: 100%;
+    height: 85px;
+}
+#btn{
+    width: 30%;
+    height: 40px;
+    border: 2px solid #64bcf4;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    font-size: 20px;
+}
+#btn:hover{
+    background-color: #64bcf4;
+  }
+
+  @media screen and (max-width: 470px){
+      .wrapper{
+          width: 300px;
+          height: 450px;
+      }
+      h2{
+          left: 22%;
+          font-size: 1.55rem;
+          top: 7%;
+      }
+      .name input{
+          width: 45%;
+      }
+      #btn{
+          position: absolute;
+          top: 90%;
+      }
+  }
+    </style>
+    <div class="wrapper">
+        <div class="log">
+            <img src="img/logo.png" alt="">
+            <h2>Creatorsbay</h2>
+        </div>
+        <div class="form">
+            <form action="">
+                <div class="name">
+                    <label for="">First Name</label>
+                    <input type="text" placeholder="First name">
+                    <label for="">Last Name</label>
+                    <input type="text" placeholder="Last Name">
+                </div>
+                <br>
+                <div class="email">
+                    <label for="">Email</label>
+                    <input type="email" placeholder="Email address" required>
+                </div>
+                <br>
+                <div class="sub">
+                    <label for="">Subject</label>
+                    <input type="text" placeholder="Subject">
+                </div>
+                <br>
+                <div class="message">
+                    <label for="">Message</label>
+                    <input type="text" placeholder="write your message here......">
+                </div>
+                <br>
+                <button id="btn">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
