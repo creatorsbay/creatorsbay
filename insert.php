@@ -4,8 +4,8 @@
 		// servername => localhost
 		// username => root
 		// password => empty
-		// database name => staff
-		$conn = mysqli_connect("localhost", "root", "", "staff");
+		// database name => staf
+		$conn = mysqli_connect("localhost", "root", "", "staf");
 		
 		// Check connection
 		if($conn === false){
