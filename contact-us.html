@@ -105,27 +105,27 @@ h2{
             <h2>Creatorsbay</h2>
         </div>
         <div class="form">
-            <form action="">
+            <form action="contact_us.php" method="POST">
                 <div class="name">
                     <label for="">First Name</label>
-                    <input type="text" placeholder="First name">
+                    <input type="text" name = "first_name" placeholder="First name">
                     <label for="">Last Name</label>
-                    <input type="text" placeholder="Last Name">
+                    <input type="text" name="last_name" placeholder="Last Name">
                 </div>
                 <br>
                 <div class="email">
                     <label for="">Email</label>
-                    <input type="email" placeholder="Email address" required>
+                    <input type="email" name="email" placeholder="Email address" required>
                 </div>
                 <br>
                 <div class="sub">
                     <label for="">Subject</label>
-                    <input type="text" placeholder="Subject">
+                    <input type="text" name="subject" placeholder="Subject">
                 </div>
                 <br>
                 <div class="message">
                     <label for="">Message</label>
-                    <input type="text" placeholder="write your message here......">
+                    <input type="text" name="message" placeholder="write your message here......">
                 </div>
                 <br>
                 <button id="btn">Send</button>
