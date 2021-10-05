@@ -421,17 +421,29 @@ header .container {
   }
 }
 
-.fac{
-  font-size: 30px;
-  color: #3b5998;
+.social{
+ display: grid;
+ grid-template-columns: auto auto auto;
+ padding: 4%;
 }
-
-.ig{
+.fac i{
   font-size: 30px;
-  color:  #3f729b;
+  color: #0b56ec;
 }
-
-.tweet{
+.fac i:hover{
+  color: #467eee;
+}
+.ig i{
   font-size: 30px;
-  color: #55acee;
+  color:  #f30daa;
+}
+.ig i:hover{
+  color: purple;
+}
+.tweet i{
+  font-size: 30px;
+  color: #1DA1F2;
+}
+.tweet i:hover{
+  color: var(--mainColor);
 }
